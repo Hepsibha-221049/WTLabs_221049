@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #121212;
+    font-family: 'Montserrat', sans-serif;
+}
+.sidebar{
+    background-color: #000000;
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    width: 300px;
+    padding: 24px;
+    color:white;
+}
+.sidebar .logo img{
+    width:21vh;
+}
+.sidebar .navigation ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.sidebar .navigation ul li{
+    padding:10px 0px;
+}
+
+.sidebar .navigation ul li a{
+    text-decoration:none;
+    color: #b3b3b3;
+    font-size:18px;
+    font-weight:500;
+}
+.sidebar .navigation ul li .fa{
+    font-size:20px;
+    margin-right:10px;
+}
+.sidebar .navigation ul li a:hover{
+    color:white;
+}
+
+.sidebar .policies{
+    position: absolute;
+    bottom: 100px;
+}
+.sidebar .policies ul{
+    list-style: none;
+}
+.sidebar .policies ul li{
+    padding:5px 0px;
+}
+.sidebar .policies ul li a{
+    text-decoration:none;
+    color: #b3b3b3;
+    font-size:14px;
+    font-weight:500;
+}
+.sidebar .policies ul li a:hover{
+    text-decoration: underline;
+}
+
+.top-content{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:black;
+}
+.top-content  .prev-next-button button{
+    background-color:black;
+    border:0;
+    width:34px;
+    height:34px;
+    cursor:not-allowed;
+    color:#7a7a7a;
+    border-radius:100%;
+    font-size:18px;
+    margin-right:10px;
+}
+.top-content .login-signup{
+    display: flex;
+    align-items: center;
+}
+.top-content .login-signup button{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding:10px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top:5px;
+    margin-right:5px;
+}
+.top-content .login-sign-up ul{
+    list-style:none;
+}
+.top-content .login-signup ul li{
+    display: inline-block;
+    margin: 4px 8px;
+    width: 70px;
+}
+.top-content .login-signup ul li a{
+    background-color: transparent;
+    color: #b3b3b3;
+    letter-spacing:1px;
+    font-weight:bold;
+    font-size:14px;
+    text-decoration: none;
+}
+.top-content .login-signup ul li a:hover{
+    color:white;
+    font-size:15px;
+}
+.main-content{
+    margin-left:300px;
+}
+
+.spotify-playlists{
+    padding:20px 40px;
+}
+.spotify-playlists h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.spotify-playlists .list {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.spotify-palylists .list .item{
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.spotify-palylists .list .item hover{
+    background-color:#252525;
+}
+.spotify-playlists .list .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.spotify-playlists .list .item .play {
+    position: relative;
+}
+.spotify-playlists .list .item .play .fa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover .play .fa {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.spotify-playlists .list .item h4{
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.spotify-playlists .list .item p {
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.spotify-playlists hr {
+    margin: 70px 0px 0px;
+    border-color: #636363;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer h6 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+}
