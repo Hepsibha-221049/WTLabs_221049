@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="table.css">
+    </head>
+    <body>
+
+        <!-- external css -->
+        <table border="1" class="mytable">
+            <caption>Student Details</caption>
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>District</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Arisu</td>
+            <td>viag</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Usagi</td>
+            <td>kurool</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Kerube</td>
+            <td>kadapa</td>
+        </tr>
+    </table>
+
+    <!-- internal css -->
+     <style>
+        .internal-css{
+            width:70%;
+            /* border-collapse: collapse; */
+            background-color:#f0f9ff;
+            /* padding-top:20px; */
+            justify-content: center;
+            border-radius:5px;
+            
+        }
+        .internal-css caption{
+            padding:20px;
+            font-weight:400;
+            font-size:25px;
+        }
+        .internal-css th{
+            background-color: #f15c21;
+            color: white;
+            padding: 16px;
+        }
+        .internal-css td{
+            text-align: center;
+            padding:6px;
+        }
+        .internal-css tr:nth-child(odd){
+            background-color:#fcf0eb;
+            padding:6px;
+        }
+        .internal-css tr:hover{
+    background-color: #e0e7ff;
+    cursor: pointer;
+}
+        
+     </style>
+
+    <table class="internal-css"border="1" >
+            <caption>Student Details</caption>
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>District</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Arisu</td>
+            <td>viag</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Usagi</td>
+            <td>kurool</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Kerube</td>
+            <td>kadapa</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Ann</td>
+            <td>Nellore</td>
+        </tr>
+    </table>
+    <!-- inline css -->
+
+
+    <table style="width:60%;border-collapse:collapse;background:#1ecc89">
+            <caption style="padding:20px;font-size:16px;font-weight:400">Student Details</caption>
+        <tr>
+            <th colspan="3"style="border:2px solid #f1e5df;padding:10px">Student ID</th>
+            <th style="border:2px solid #f1e5df;padding:10px">Name</th>
+            <th style="border:2px solid #f1e5df;padding:10px">District</th>
+        </tr>
+        <tr>
+            <td rowsapn="2"style="border:2px solid #ea580c;padding:10px;text-align:center">1</td>
+            <td style="border:2px solid #ea580c;padding:10px;text-align:center">Arisu</td>
+            <td style="border:2px solid #ea580c;padding:10px;text-align:center">viag</td>
+        </tr>
+        <tr>
+            <td style="border:2px solid #ea580c;padding:10px;text-align:center">2</td>
+            <td style="border:2px solid #ea580c;padding:10px;text-align:center">Usagi</td>
+            <td style="border:2px solid #ea580c;padding:10px;text-align:center">kurool</td>
+        </tr>
+        <tr>
+            <td style="border:2px solid #ea580c;padding:10px;text-align:center">3</td>
+            <td style="border:2px solid #ea580c;padding:10px;text-align:center">Kerube</td>
+            <td style="border:2px solid #ea580c;padding:10px;text-align:center">kadapa</td>
+        </tr>
+    </table>
+    
+    <!-- Row span and col span -->
+    <table border="1"  cellpadding="15px" cellspacing="2px;"align="center">
+    <tr>
+        <th colspan="8">Student Academic Report</th>
+    </tr>
+    <tr>
+        <th rowspan="2">Student ID</th>
+        <th rowspan="2">Name</th>
+        <th colspan="3">Semester 1</th>
+        <th colspan="3">Semester 2</th>
+    </tr>
+    <tr>
+        <th>Maths</th>
+        <th>Science</th>
+        <th>English</th>
+        <th>Maths</th>
+        <th>Science</th>
+        <th>English</th>
+    </tr>
+    <tr>
+        <td rowspan="2">101</td>
+        <td rowspan="2">Alice</td>
+        <td>85</td>
+        <td>90</td>
+        <td>88</td>
+        <td>89</td>
+        <td>92</td>
+        <td>91</td>
+    </tr>
+    <tr>
+        <td colspan="3">Semester 1 Total: 263</td>
+        <td colspan="3">Semester 2 Total: 272</td>
+    </tr>
+    <tr>
+        <td rowspan="2">102</td>
+        <td rowspan="2">Bob</td>
+        <td>78</td>
+        <td>80</td>
+        <td>75</td>
+        <td>82</td>
+        <td>84</td>
+        <td>79</td>
+    </tr>
+    <tr>
+        <td colspan="3">Semester 1 Total: 233</td>
+        <td colspan="3">Semester 2 Total: 245</td>
+    </tr>
+</table>
+
+
+
+    </body>
+</html>
