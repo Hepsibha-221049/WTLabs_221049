@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCollegePortal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/CollegeLogo.png"type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="about-banner">
+        <nav >
+            <a href="index.html"><img src="images/CollegeLogo.png"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-list" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7639.355799710315!2d80.81927868819707!3d16.792693285986047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1766248682671!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>
+                            Mylavaram Road,IIIT Building
+                        </h5>
+                        <p>Nuzvid,Eluru District,AP</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>91-8379572312</h5>
+                        <p>Monday to Saturday 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>
+                        <h5>
+                            info@rguktn.ac.in
+                        </h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name"placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your email" required>
+                    <input type="text" name="subject"placeholder="Enter Your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="red-btn">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="foot">
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="foot-top">
+                <div class="links_">
+                    <img src="./images/CollegeLogo.png">
+                    <h5>Rajiv Gandhi University of <br>Knowledge Technologies<br>-Nuzvid</h5>
+                    <p>
+                        Catering to the Educational Needs of Gifted Rural Youth of Andhra Pradesh<br>
+                        (Established by the Govt. of Andhra Pradesh and recognized as per Section 2(f),12(B) of UGC Act,1956)
+                    </p>
+                    <a href="#">Sitemap</a>|
+                    <a href="#">Accessibility</a>|
+                    <a href="#">How to</a>|
+                    <a href="#">Contact Directory</a>|
+                </div>
+                <div class="footer-right">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <a href=""><li>>> Administration</li></a>
+                        <a href=""><li>>> Departments</li></a>
+                        <a href=""><li>>> Examination cell</li></a>
+                        <a href=""><li>>> Alumini connect</li></a>
+                        <a href=""><li>>> Placements cell</li></a>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Happenings</h3>
+                    <ul>
+                        <a href=""><li>>> News and Events</li></a>
+                        <a href=""><li>>> Annoucemments</li></a>
+                        <a href=""><li>>> Campus Gallery</li></a>
+                        <a href=""><li>>> Careers</li></a>
+                        <a href=""><li>>> Tenders</li></a>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Also Visit</h3>
+                    <ul>
+                        <a href=""><li>>> RGUKT-AP</li></a>
+                        <a href=""><li>>> RGUKT-Nuzvid</li></a>
+                        <a href=""><li>>> RGUKT-RK Valley</li></a>
+                        <a href=""><li>>> RGUKT-Ongole</li></a>
+                        <a href=""><li>>> RGUKT-Srikakulam</li></a>
+                    </ul>
+                </div>
+                </div>
+                </div>
+            </div>
+            <div class="foot-bottom">
+                <p>
+                All Copyright &copy; 2025 rgukt-Nuzvid.All Rights Reserved.<br>
+                Designed,Developed and Maintained By <span style="color:rgb(223, 29, 29);font-weight:600">Center for Technical Solutions</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        var navLinks=document.getElementById("nav-links");
+        function showMenu(){
+            navLinks.style.right="0"
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px"
+        }
+    </script>
+</body>
+</html>
