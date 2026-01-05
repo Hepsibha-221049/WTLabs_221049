@@ -149,19 +149,14 @@
             </div>
         </div>
     </section>
-    <!-- <section class="footer">
-        <h4>About us</h4>
-        <p>anybody have have any queries or to want know 
-            more about our college 
-            please go thorughs the following websites</p>
-        <div class="icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-        </div>
-        <p>Made with<i class="fa-regular fa-heart"></i>by easy tutorials</p>
-    </section> -->
+    <section class="portal-info">
+        <h3>College Portal Information</h3>
+        <p><strong>College Name:</strong><span id="collegeName"></span></p>
+        <p><strong>User Role:</strong><span id="userRole"></span></p>
+        <p><strong>Active Students:</strong><span id="studentCount"></span></p>
+        <p><strong>PortalStatus:</strong><span id="portalStatus"></span></p>
+        <button onclick="updatePortal()">update portal</button>
+    </section>
     <section class="footer">
         <div class="foot">
             <div class="icons">
@@ -227,14 +222,6 @@
             </div>
         </div>
     </section>
-    <script>
-        var navLinks=document.getElementById("nav-links");
-        function showMenu(){
-            navLinks.style.right="0"
-        }
-        function hideMenu(){
-            navLinks.style.right="-200px"
-        }
-    </script>
 </body>
+<script src="script.js"></script>
 </html>

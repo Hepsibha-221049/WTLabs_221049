@@ -62,14 +62,13 @@
                 </div>
             </div>
             <div class="contact-col">
-                <form action="form-handler.php" method="post">
+                <form id="contactForm">
                     <input type="text" name="name"placeholder="Enter Your Name" required>
                     <input type="email" name="email" placeholder="Enter Your email" required>
                     <input type="text" name="subject"placeholder="Enter Your subject" required>
                     <textarea rows="8" name="message" placeholder="Message" required></textarea>
                     <button type="submit" class="red-btn">Send Message</button>
                 </form>
-
             </div>
         </div>
     </section>
@@ -136,14 +135,7 @@
             </div>
         </div>
     </section>
-    <script>
-        var navLinks=document.getElementById("nav-links");
-        function showMenu(){
-            navLinks.style.right="0"
-        }
-        function hideMenu(){
-            navLinks.style.right="-200px"
-        }
+    <script src="script.js">
     </script>
 </body>
 </html>
