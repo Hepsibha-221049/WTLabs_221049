@@ -47,10 +47,10 @@ contactForm.addEventListener("submit",function(e){
 
 //objects
 let CollegePortal={
-    name:"RGUKT Nuzvid";
-    userRole:"Student";
-    activeStudents:7000;
-    portalStatus:"Offline";
+    name:"RGUKT Nuzvid",
+    userRole:"Student",
+    activeStudents:7000,
+    portalStatus:"Offline"
 };
 const collegeNameElem = document.getElementById("collegeName");
 const userRoleElem = document.getElementById("userRole");
