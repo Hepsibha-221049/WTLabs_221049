@@ -31,6 +31,7 @@
         </nav>
         <h1>Our Courses</h1>
     </section>
+
     <section class="course">
         <h1>courses we offer</h1>
         <p>we offered 6 year Integrated course you study first two years in the name 
@@ -57,38 +58,30 @@
             </div>
         </div>
     </section>
-    <section class="facilities">
-        <h1>Our facilities</h1>
-        <p>
-            Our campus facilities include sports,huge libary
-            ,yogashala,hospital ambulance service if needed,police station,
-            post service,SBI bank
-        </p>
-        <div class="row">
-            <div class="facility-col">
-                <img src="./images/lib.png">
-                <h3>Library</h3>
-                <p>our library includes gate level books,
-                    monthly magazines,for competive exams.
-                </p>
-            </div>
-            <div class="facility-col">
-                <img src="./images/sport1.png">
-                <h3>Sports</h3>
-                <p>
-                    students performing sport talent in national level
-                    and international level.
-                </p>
-            </div>
-            <div class="facility-col">
-                <img src="./images/yoga.png">
-                <h3>Yoga</h3>
-                <p>
-                    students performing yoga talent in national level.
-                </p>
-            </div>
-        </div>
-    </section>
+    <h2>COURSE UPLOAD</h2>
+    <form action="course.php" enctype="multipart/form-data" method="post">
+        <input type="file" name="myfile" required>
+        <br><br>
+        <button type="submit">Upload</button>
+
+    </form>
+    <?php
+    if($_SERVER['REQUEST_METHOD']==='POST'){
+    if(isset($_FILES['myfile'])&&$_FILES['myfile']['error']===0){
+    $fileName=$_FILES['myfile']['name'];
+    $fileSize=$_FILES['myfile']['size'];
+    $tempName=$_FILES['myfile']['tmp_name'];
+        move_uploaded_file($tempName,"uploads/".$fileName);
+        echo "file uploaded successfully";
+        echo "<a href='download_course.php?file=$fileName'>Download File</a>";
+    } elseif (isset($_FILES['myfile']) && $_FILES['myfile']['error'] === 4) {
+    echo "No file selected";
+}
+    else{
+        echo "file upload failed";
+    }
+    }
+?>
     <section class="footer">
         <div class="foot">
             <div class="icons">
