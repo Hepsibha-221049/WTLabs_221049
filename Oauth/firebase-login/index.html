@@ -1,0 +1,58 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Firebase Google Login</title>
+</head>
+<body>
+
+  <button onclick="googleLogin()">Login with Google</button>
+  <button onclick="logout()">Logout</button>
+
+  <h3 id="user"></h3>
+
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } 
+  from "https://www.gstatic.com/firebasejs/12.9.0/firebase-auth.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBYuCIlFgPUtoSD9UY7TmLazXStG7h32_8",
+    authDomain: "fir-login-6b908.firebaseapp.com",
+    projectId: "fir-login-6b908",
+    storageBucket: "fir-login-6b908.firebasestorage.app",
+    messagingSenderId: "481826880800",
+    appId: "1:481826880800:web:7f51a00d1bd81672c12b45",
+    measurementId: "G-SSF761JVW6"
+  };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+
+window.googleLogin = function() {
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      const user = result.user;
+      document.getElementById("user").innerHTML =
+        "Welcome " + user.displayName + "<br>Email: " + user.email;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
+
+window.logout = function() {
+  signOut(auth)
+    .then(() => {
+      document.getElementById("user").innerHTML = "";
+    });
+}
+
+</script>
+</body>
+</html>

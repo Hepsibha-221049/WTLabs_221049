@@ -1,0 +1,12 @@
+/facebookOauth/.env
+/facebookOauth/vendor/
+/facebookOauth/composer.json
+/facebookOauth/composer.lock
+/github-login/vendor/
+/github-login/.env
+/github-login/composer.json
+/github-login/composer.lock
+/google-login/vendor/
+/google-login/.env
+/google-login/composer.json
+/google-login/composer.lock
